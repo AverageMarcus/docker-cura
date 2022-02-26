@@ -4,27 +4,19 @@ Docker image containing Ultimaker Cura, accessible via web UI or VNC.
 
 ## Features
 
-## Install
-
-```sh
-
-```
+* Web based GUI (Port 5800)
+* VNC based access (Port 5900)
 
 ## Building from source
-
-With Docker:
 
 ```sh
 make docker-build
 ```
 
-Standalone:
-
-```sh
-make build
-```
-
 ## Resources
+
+* [docker-baseimage-gui](https://github.com/jlesage/docker-baseimage-gui)
+* [Cura](https://github.com/Ultimaker/Cura)
 
 ## Contributing
 
