@@ -6,6 +6,7 @@ Docker image containing Ultimaker Cura, accessible via web UI or VNC.
 
 * Web based GUI (Port 5800)
 * VNC based access (Port 5900)
+* All config symlinked to `/app/cura` so it can be stored with a persistent volume
 
 ## Building from source
 
