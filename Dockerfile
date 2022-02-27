@@ -17,9 +17,13 @@ FROM jlesage/baseimage-gui:debian-10
 
   ADD ./src/startapp.sh /startapp.sh
 
-  RUN mkdir -p /app/cura && \
+  RUN mkdir -p /app/cura/config && \
     mkdir -p /config/xdg/config/cura && \
-    ln -sf /app/cura /config/xdg/config/cura/4.13
+    ln -sf /app/cura/config /config/xdg/config/cura/4.13
+
+  RUN mkdir -p /app/cura/data && \
+    mkdir -p /config/xdg/data/cura && \
+    ln -sf /app/cura/data /config/xdg/data/cura/4.13
 
   VOLUME [ "/app/cura" ]
   ENV APP_NAME="Cura"
